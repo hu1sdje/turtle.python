@@ -134,6 +134,7 @@ def rabbit(x, y, length):
     turtle.right(90)
     parallelogram(x+1/6*length, y+1/3*length, 0.5*length, 1/6*length, 'white', 'purple')
 
+
 rabbit(-175, 200, 95)
 
 
