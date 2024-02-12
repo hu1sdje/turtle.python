@@ -133,6 +133,7 @@ def rabbit(x, y, length):
     leg_triangle(x-1/6*length, y-5/6*length, 1/3*length, 'white', 'blue')
     turtle.right(90)
     parallelogram(x+1/6*length, y+1/3*length, 0.5*length, 1/6*length, 'white', 'purple')
+    turtle.right(180)
 
 rabbit(-175, 200, 95)
 
@@ -150,6 +151,8 @@ def rooster(x, y, length):
     hypotenuse_triangle(x- 1/4*length, y+ 1/4*length, 1/2*length, 'white', 'cyan')
     turtle.left(180)
     parallelogram(x- 3/4*length, y +1/4*length, 1/3*length, 1/8*length, 'white', 'LimeGreen')
+    turtle.right(45)
+    turtle.left(90)
 
 
 rooster(225, 200, 150)
