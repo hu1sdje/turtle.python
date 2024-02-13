@@ -134,7 +134,7 @@ def rectangle(x, y, length, height, line_color, filling_color):
     turtle.forward(length)
     turtle.right(90)
     turtle.end_fill()
-
+    
 
 def main_square(x, y, length):
     '''
@@ -276,7 +276,7 @@ def helicopter(x, y, length):
     turtle.left(135)
     square(x-1/1.5*length, y-1/4*length, 1/4*length, 'white', 'orange')
     turtle.right(45)
-
+    
 
 def f1_car(x, y, length):
     '''
@@ -372,3 +372,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+ 
