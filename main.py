@@ -173,9 +173,49 @@ def helicopter(x, y, length):
     leg_triangle(x-1/1.875*length,y-1/8.5*length, 1/4*length, 'white', 'pink')
     turtle.left(135)
     square(x-1/1.5*length, y-1/4*length, 1/4*length, 'white', 'orange')
+    turtle.right(45)
 
 helicopter(0, -175, 150)
 
+def ship(x, y, length):
+    turtle.left(45)
+    leg_triangle(x, y, 1/3 * length, 'white', 'purple')
+    turtle.right(225)
+    hypotenuse_triangle(x, y - 17/16 * length, 5/7 * length, 'white', 'red')
+    turtle.left(180)
+    leg_triangle(x, y - 3/7 * length, 4/10 * length, 'white', 'yellow')
+    turtle.left(45)
+    square(x + 6/17 * length, y - 12/17 * length, 1/5 * length, 'white', 'orange')
+    turtle.right(135)
+    hypotenuse_triangle(x + 13/31 * length, y - 17 / 16 * length, 3/7 * length, 'white', 'pink')
+    turtle.right(180)
+    hypotenuse_triangle(x - 13/31 * length, y - 17 / 16 * length, 6/7 * length, 'white', 'blue')
+    turtle.right(45)
+    hypotenuse_triangle(x - 13/31 * length, y - 17 / 16 * length, 7/11 * length, 'white', 'grey')
+    turtle.right(45)
+    square(x - 13/31 * length, y - 17 / 16 * length, 3/7 * length, 'white', 'purple')
+    turtle.right(135)
+    leg_triangle(x - 0.84 * length, y - 1.49 * length, 3/7 * length, 'grey', 'pink')
+
+ship(-190, 50, 95)
+
+def left_man(x, y, length):
+    square(x, y, 1/3 * length, 'white', 'orange')
+    turtle.left(90)
+    leg_triangle(x + 2/5 * length, y, 3/5 * length, 'white', 'red')
+    turtle.left(90)
+    parallelogram(x - 1/5 * length, y, 2/5 * length, 1/5 * length, 'white', 'light green')
+    turtle.left(45)
+    leg_triangle(x - 3/5 * length, y - length, 3/5 * length, 'white', 'yellow')
+    turtle.left(45)
+    leg_triangle(x, y - 7/5 * length, 2/5 * length, 'white', 'light blue')
+    turtle.right(180)
+    leg_triangle(x, y - 6/5 * length, 0.3 * length, 'white', 'purple')
+    turtle.right(45)
+    leg_triangle(x - 0.5 * length, y - 0.9 * length, 2 / 5 * length, 'white', 'pink')
+    turtle.right(135)
+
+left_man(-190, -200, 95)
 
 turtle.done()
 
